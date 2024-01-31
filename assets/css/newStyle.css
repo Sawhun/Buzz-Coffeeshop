@@ -1,0 +1,36 @@
+/* Menu section */
+.navNew ul li{
+    display: inline-block;
+    margin: 0rem 1rem;
+    margin-top: 3rem;
+    list-style: none;
+}
+.navNew ul li a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+
+}
+.newRow{
+    display: flex; 
+}
+.galleryRow,
+.testimonialsRow,
+.blogRow{
+    display: flex; 
+    justify-content: center;
+}
+
+@media screen and (max-width:600px) {
+       /* Menu section */
+       .navNew{
+        display: none;
+       }
+       .galleryRow,
+        .testimonialsRow,
+        .blogRow,
+        .newRow{
+        display: flex;
+        flex-direction: column;
+       }
+}
